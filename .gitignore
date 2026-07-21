@@ -1,0 +1,59 @@
+# ---- Python --------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.python-version
+.venv/
+venv/
+.env
+
+# ---- ML artifacts (large, regenerable, not part of source) ---------------
+models/
+*.pth
+*.npz
+
+# ---- Simulation output (huge, regenerable) -------------------------------
+*.root
+*.slcio
+*.edm4hep
+data_spectrum_*/
+SIM_COMPLETE.txt
+sim_output*.log
+simulation.log
+log_job*.txt
+
+# ---- Jupyter / notebook side effects -------------------------------------
+*.nbconvert.ipynb
+*-checkpoint.ipynb
+
+# ---- Editor / OS noise ---------------------------------------------------
+.DS_Store
+._*
+*.swp
+*~
+.vscode/
+.idea/
+
+# ---- Local IDE / agent / editor state (not part of the public surface) ----
+.claude/
+CLAUDE.md
+
+# ---- Build / temp --------------------------------------------------------
+build/
+dist/
+*.egg-info/
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# ---- The OLD pre-refactor layout (kept locally for transition, not committed) ----
+compact/
+
+# ---- Local override sentinels --------------------------------------------
+# A student might leave behind their own setup_calomaps.sh override
+# alongside ~/setup_calomaps.sh — that's outside the repo and not our concern.
+
+# ---- legacy notebooks (will be deleted after verification) ---------------
+notebooks/geometry.ipynb
+notebooks/geometry_eval.ipynb
